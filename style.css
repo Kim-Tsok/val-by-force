@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(216, 127, 201);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#yesBtn {
+  background-color: rgb(73, 202, 75);
+  color: white;
+  z-index: 99;
+}
+
+#noBtn {
+  background-color: rgb(218, 66, 66);
+  color: white;
+}
