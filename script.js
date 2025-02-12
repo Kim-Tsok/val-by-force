@@ -2,33 +2,46 @@ let yesBtn = document.getElementById("yesBtn");
 let noBtn = document.getElementById("noBtn");
 
 let yesSize = 16;
-let switched = false; // To make sure switching happens only once
+let firstChoice = null;
 
-// Handle "No" button click
+const webhookURL =
+  "https://script.google.com/macros/s/AKfycbz7Wt6OfPeEgOucT9WtXRPnEUBNFuCZR9sly1tshzE6CQtYUQPCURPsk4-Hvi1CON8kIw/exec";
+
+function sendNotification(choice) {
+  fetch(webhookURL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ choice: choice }),
+  }).catch((err) => console.error("Failed to send data:", err));
+}
+
+yesBtn.addEventListener("click", () => sendNotification("Yes"));
+noBtn.addEventListener("click", () => sendNotification("No"));
+
 noBtn.addEventListener("click", function () {
+  if (!firstChoice) {
+    firstChoice = "No";
+    sendNotification("No");
+  }
+
   yesSize += 5;
   yesBtn.style.fontSize = yesSize + "px";
 
-  // Switch positions when Yes gets big enough (only once)
-  if (yesSize >= 40 && !switched) {
-    switched = true;
-
-    // Swap the button positions
-    yesBtn.style.position = "absolute";
-    noBtn.style.position = "absolute";
-
-    let yesLeft = yesBtn.style.left;
-    let noLeft = noBtn.style.left;
-
-    yesBtn.style.left = noLeft;
-    noBtn.style.left = yesLeft;
-
-    // Reset No button size to default
-    noBtn.style.fontSize = "16px";
+  if (yesSize >= 35) {
+    noBtn.style.display = "none";
   }
 });
 
-// Handle "Yes" button click
 yesBtn.addEventListener("click", function () {
-  document.body.innerHTML = "<h1>Yay! 🎉 See you on Valentine's! ❤️</h1>";
+  if (!firstChoice) {
+    firstChoice = "Yes";
+    sendNotification("Yes");
+  }
+
+  if (firstChoice === "No") {
+    document.body.innerHTML =
+      '<h1 class="end">See you on valentine!❤️</br> But no gift for clicking no😂</h1>';
+  } else {
+    document.body.innerHTML = '<h1 class="end">See you on valentine!❤️</h1>';
+  }
 });

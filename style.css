@@ -8,7 +8,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(216, 127, 201);
+  background-image: url("./val-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   font-family: Arial, sans-serif;
 }
 
@@ -19,19 +22,24 @@ body {
 button {
   font-size: 16px;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 30px;
   border: none;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  border-radius: 4px;
 }
 
 #yesBtn {
-  background-color: rgb(73, 202, 75);
+  background-color: rgb(57, 218, 60);
   color: white;
   z-index: 99;
 }
 
 #noBtn {
-  background-color: rgb(218, 66, 66);
+  background-color: rgb(224, 52, 52);
   color: white;
+}
+.end {
+  width: 100%;
+  text-align: center;
 }
