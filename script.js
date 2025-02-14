@@ -40,8 +40,8 @@ yesBtn.addEventListener("click", function () {
 
   if (firstChoice === "No") {
     document.body.innerHTML =
-      '<h1 class="end">See you on valentine!❤️</br> But no gift for clicking no😂</h1>';
+      '<h1 class="end">Sure</br> But no ring for clicking no😂</h1>';
   } else {
-    document.body.innerHTML = '<h1 class="end">See you on valentine!❤️</h1>';
+    document.body.innerHTML = '<h1 class="end">Sure</h1>';
   }
 });
