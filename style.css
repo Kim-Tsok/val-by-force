@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("./val-bg.jpg");
+  background-image: url("./assets/val-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

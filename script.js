@@ -27,8 +27,8 @@ yesBtn.addEventListener("click", function () {
 
   if (firstChoice === "No") {
     document.body.innerHTML =
-      "<h1 class="end">Sure</br> I'll just ignore the fact that your first answer was no😂</h1>";
+      '<h1 class="end">I\'ll just ignore the fact that your first answer was no😂</h1>';
   } else {
-    document.body.innerHTML = '<h1 class="end">Yippee</h1>';
+    document.body.innerHTML = '<h1 class="end">See you on the 14th</h1>';
   }
 });
