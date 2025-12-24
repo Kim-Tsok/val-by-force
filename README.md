@@ -12,6 +12,9 @@ The button doesn't work.
 The answer changes.  
 Destiny wins.
 
+![Preview Image](./assets/preview.png)
+![Preview Image 2](./assets/preview2.png)
+
 ## ✨ Features
 
 - 💖 A Yes button that stands firm
