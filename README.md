@@ -12,8 +12,10 @@ The button doesn't work.
 The answer changes.  
 Destiny wins.
 
-![Preview Image](./assets/preview.png)
-![Preview Image 2](./assets/preview2.png)
+<p align="center">
+  <img src="./assets/preview.png" width="350" title="Project Preview">
+  <img src="./assets/preview2.png" width="350" title="Project Preview">
+</p>
 
 ## ✨ Features
 
@@ -30,7 +32,7 @@ Destiny wins.
 - JavaScript  
 
 ## 🚀 How to Run
-go to [The website](willubemyval.vercel.app)
+go to [the website](willubemyval.vercel.app)
 
 or
 
