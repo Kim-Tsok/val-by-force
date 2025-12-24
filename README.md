@@ -27,11 +27,12 @@ Destiny wins.
 
 ## 🛠 Tech Stack
 
-- HTML  
-- CSS  
-- JavaScript  
+- HTML
+- CSS
+- JavaScript
 
 ## 🚀 How to Run
+
 go to [the website](willubemyval.vercel.app)
 
 or
@@ -39,4 +40,5 @@ or
 Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/val-by-force.git
+git clone https://github.com/Kim-Tsok/val-by-force.git
+```
