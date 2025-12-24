@@ -30,7 +30,7 @@ Destiny wins.
 - JavaScript  
 
 ## 🚀 How to Run
-go to (willubemyval.vercel.app)
+go to [The website](willubemyval.vercel.app)
 
 or
 
